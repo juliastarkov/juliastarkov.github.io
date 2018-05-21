@@ -58,14 +58,14 @@ gulp.task('sass', () => {
 
 gulp.task('html', () => {
     gulp.src(['./**/*.html'])
-        // Minify CSS
+        // Minify HTML
         // .pipe(htmlmin({collapseWhitespace: true}))
         // .pipe(gulp.dest('./'))
         // prompt brower-sync to reload browser
         .pipe(bs.reload({stream: true})); 
 })
 
-// prompt gulp to run 
+// prompt gulp to run in terminal "gulp start"
 gulp.task('start', ['javascript', 'sass', 'html', 'browser-sync']);
 
 

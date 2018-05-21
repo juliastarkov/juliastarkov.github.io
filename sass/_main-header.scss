@@ -1,0 +1,66 @@
+.main-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	.title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		letter-spacing: 0.1em;
+		h1 {
+			font-family: $Karla;
+			color: $bodyTextColor;
+			font-size: 40px;
+			margin-bottom: 15px;
+		}
+		h2 {
+			font-family: $Archivo;
+			color: $bodyTextColor;
+			font-size: 26px;
+		}
+	}
+	svg {
+		width: 50px;
+		position: relative;
+		bottom: 20px;
+		path {
+			fill: $bodyTextColor;
+		}
+	}
+	
+}
+
+@media screen and (min-width: 1064px) {
+	.main-header {
+		.title {
+			h1 {
+				font-size: 64px;
+			}
+			h2 {
+				font-size: 36px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

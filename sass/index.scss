@@ -1,3 +1,35 @@
-h1 {
-	color: red;
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Karla:400,700');
+
+// Clean up any browser implemented styles
+@import 'reset';
+
+// Style Variables
+$Karla: 'Karla', sans-serif;
+$Archivo: 'Archivo Narrow', sans-serif;
+$navTextColor: #ffffff;
+$bodyTextColor: #4a4a4a;
+$caseStudyTitleColor: #oooooo;
+
+body {
+	height: 100%;
+	background: rgb(229,255,243); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(229,255,243,1) 0%, rgba(246,242,254,1) 50%, rgba(229,255,243,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(229,255,243,1) 0%,rgba(246,242,254,1) 50%,rgba(229,255,243,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(229,255,243,1) 0%,rgba(246,242,254,1) 50%,rgba(229,255,243,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5fff3', endColorstr='#e5fff3',GradientType=0 ); /* IE6-9 */
 }
+
+body.main-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+} 
+
+// Import your other Sass files here. Note that styles will overwrite/cascade
+// based on order of import
+@import 'main-header';
+@import 'case-header';
+@import 'nav';
+@import 'hamburgers/_hamburgers';
+@import 'featured-work';
+@import 'footer';
