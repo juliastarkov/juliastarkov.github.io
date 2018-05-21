@@ -17,8 +17,9 @@
 			</button>
 			<div class="nav-menu">
 				<div class="nav-links">
-					<a href="#">Home</a>
-					<a href="#">Work</a>
+					<!-- Add class "active" if you want it to be 'highlighted when you're on that page -->
+					<a href="#" class="active">Home</a>
+					<a href="#work">Work</a>
 					<a href="#">About</a>
 					<a href="#">Contact</a>
 				</div>
@@ -30,33 +31,33 @@
 		</div>
 
 		<!-- Change the 'down arrow' here -->
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+		<svg class="header-arrow" id="work" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
 			<g>
 				<path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
 			</g>
 		</svg>
-		<!-- /down arrow -->
+		<!-- / Down arrow -->
 
 	</header>
 
 	<section class="featured-work">
 		<h1>Featured Work</h1>
 
-	<!--	To add another project:
-			Copy entire code block for <div class="project">
-			Change <img src="img/ put new image file name here">
-			change <a href="put new project file name here" -->
-
+	<!--To add another project:
+		- Copy entire code block for <div class="project">
+		- Change <img src="img/ put new image file name here">
+		- change <a href="put new project file name here" -->
 		<div class="project">
 			<div class="inner-container">
 				<img src="img/botanic-icon.png">
 				<div class="content">
 					<h2>Botanic Author</h2>
 					<p><span>Product Design</span> for an intuitive, code-free bot building tool.</p>
-					<a href=""><button>Learn More</button></a>
+					<a href="views/projects/botanic.html"><button>Learn More</button></a>
 				</div>
 			</div>
 		</div>
+	<!--/ Copy until here -->
 
 		<div class="project">
 			<div class="inner-container">
