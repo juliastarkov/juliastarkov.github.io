@@ -30,11 +30,10 @@ gulp.task('javascript', () => {
     gulp.src(['./js/**/*.js'])
         .pipe(babel({
             presets: ['env']
-            }))
+            })).on('error', err => console.log(err))
         .pipe(concat('build.js'))
         .pipe(stripDebug())
         .pipe(uglify())
-            .on('error', err => console.log(err))
         .pipe(rename('build.min.js'))
         .pipe(gulp.dest('./dist'))
         // prompt brower-sync to reload browser
