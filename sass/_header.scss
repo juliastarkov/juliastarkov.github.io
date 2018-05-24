@@ -1,4 +1,4 @@
-.main-header {
+header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -86,7 +86,7 @@
 }
 
 @media screen and (min-width: 1064px) {
-	.main-header {
+	header {
 		.title {
 			h1 {
 				font-size: 64px;

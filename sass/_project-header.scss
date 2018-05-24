@@ -1,0 +1,13 @@
+.project-header {
+	.hamburger-inner {
+		background-color: #fff;
+		&::before,
+		&::after {
+			background-color: #fff;
+		}
+	}
+	.project-header-bg {
+		position: absolute;
+		z-index: -1;
+	}
+}

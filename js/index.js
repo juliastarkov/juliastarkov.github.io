@@ -1,8 +1,8 @@
 // Select needed elements and store as variables
 const hamburger   = document.querySelector('.hamburger'),
       navMenu     = document.querySelector('.nav-menu'),
-      headerText  = document.querySelector('.main-header .title'),
-      headerArrow = document.querySelector('.main-header svg'),
+      headerText  = document.querySelector('#main-header .title'),
+      headerArrow = document.querySelector('#main-header svg'),
       navBtns     = [...document.querySelectorAll('.nav-links a')];
 
 // Functionality for burger menu
@@ -74,7 +74,7 @@ const nav1 = navBtns[0];
 const nav2 = navBtns[1];
 const nav3 = navBtns[2];
 const nav4 = navBtns[3];
-const header = document.getElementById('header').offsetHeight;
+const header = document.getElementById('main-header').offsetHeight;
 const work = document.getElementById('work').offsetHeight;
 const about = document.getElementById('about').offsetHeight;
 const contact = document.getElementById('contact').offsetHeight;

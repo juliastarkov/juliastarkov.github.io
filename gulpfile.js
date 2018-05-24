@@ -5,12 +5,17 @@ const gulp       = require('gulp'),
 	  cleanCss   = require('gulp-clean-css'),
 	  rename     = require('gulp-rename'),
 	  uglify     = require('gulp-uglify'),
-      gutil      = require('gulp-util'),
       babel      = require('gulp-babel'),
       sass       = require('gulp-sass'),
       htmlmin    = require('gulp-htmlmin'),
 	  stripDebug = require('gulp-strip-debug'),
       bs         = require('browser-sync').create();
+
+// Display Babel/JS errors in console without stopping browser-sync
+function handleError (error) {
+    console.log(error.toString());
+    this.emit('end');
+}
 
 // auto update browser on HTML, SCSS, or JS file changes
 gulp.task('browser-sync', () => {
@@ -30,13 +35,12 @@ gulp.task('javascript', () => {
     gulp.src(['./js/**/*.js'])
         .pipe(babel({
             presets: ['env']
-            })).on('error', err => console.log(err))
+            })).on('error', handleError)
         .pipe(concat('build.js'))
         .pipe(stripDebug())
         .pipe(uglify())
         .pipe(rename('build.min.js'))
         .pipe(gulp.dest('./dist'))
-        // prompt brower-sync to reload browser
         .pipe(bs.reload({stream: true}));
 })
 
@@ -51,7 +55,6 @@ gulp.task('sass', () => {
         }))
         .pipe(rename('build.min.css'))
         .pipe(gulp.dest('./dist'))
-        // prompt brower-sync to reload browser
         .pipe(bs.reload({stream: true})); 
 })
 
@@ -60,11 +63,10 @@ gulp.task('html', () => {
         // Minify HTML
         // .pipe(htmlmin({collapseWhitespace: true}))
         // .pipe(gulp.dest('./'))
-        // prompt brower-sync to reload browser
         .pipe(bs.reload({stream: true})); 
 })
 
-// prompt gulp to run in terminal "gulp start"
+// prompt gulp to run in terminal "$ gulp start"
 gulp.task('start', ['javascript', 'sass', 'html', 'browser-sync']);
 
 
