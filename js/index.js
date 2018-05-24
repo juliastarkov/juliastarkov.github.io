@@ -61,12 +61,8 @@ navBtns.forEach(nav => {
 		e.preventDefault();
 		// Remove active class from all navs
 		changeActiveNav(this);
-		// Adjust the amount of additional pixels to account for navbar on desktop
-		if(window.screen.width >= 1064) {
-			scrollTo(document.documentElement, (nav.position - (navMenu.offsetHeight + 20)));
-		} else {
-			scrollTo(document.documentElement, nav.position);
-		}
+		// Scroll to content
+		scrollTo(document.documentElement, nav.position);
 	})
 })
 
