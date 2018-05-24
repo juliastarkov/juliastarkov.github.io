@@ -12,30 +12,6 @@ function burgerMenu() {
 	navMenu.classList.toggle('open');
 }
 
-// For each nav link, find the corresponding content's position on page and assign to node object
-// 'Smooth Scroll' to position on page when nav-link is clicked
-navBtns.forEach(nav => {
-	const id    = nav.textContent.toLowerCase(),
-		  navEl = document.getElementById(id);
-	// Find positon of corresponding content on page	  
-	nav.position = (navEl.offsetTop - document.body.scrollTop);
-	nav.addEventListener('click', function(e) {
-		e.preventDefault();
-		// Remove active class from all navs
-		navBtns.forEach(nav => {
-			nav.classList.remove('active');
-		})
-		// Adjust the amount of additional pixels to account for navbar on desktop
-		if(window.screen.width >= 1064) {
-			scrollTo(document.documentElement, (nav.position - (navMenu.offsetHeight + 20)));
-		} else {
-			scrollTo(document.documentElement, nav.position);
-		}
-		// nav - link styles as 'active'
-		this.classList.add('active');
-	})
-})
-
 // Smooth Scrolling Nav Buttons
 // https://gist.github.com/andjosh/6764939
 function scrollTo(element, to, duration= 500) {
@@ -65,14 +41,65 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	return -c/2 * (t*(t-2) - 1) + b;
 };
 
+function changeActiveNav(thisNav) {
+	navBtns.forEach(nav => {
+		nav.classList.remove('active');
+	})
+	// nav - link styles as 'active'
+	thisNav.classList.add('active');
+}
+
+// For each nav link, find the corresponding content's position on page and assign to node object
+// 'Smooth Scroll' to position on page when nav-link is clicked
+navBtns.forEach(nav => {
+	const id    = nav.textContent.toLowerCase();
+	// Assign corresponding element to node
+	nav.el = document.getElementById(id);
+	// Find positon of corresponding content on page and assign to node	  
+	nav.position = (nav.el.offsetTop - document.body.scrollTop);
+	nav.addEventListener('click', function(e) {
+		e.preventDefault();
+		// Remove active class from all navs
+		changeActiveNav(this);
+		// Adjust the amount of additional pixels to account for navbar on desktop
+		if(window.screen.width >= 1064) {
+			scrollTo(document.documentElement, (nav.position - (navMenu.offsetHeight + 20)));
+		} else {
+			scrollTo(document.documentElement, nav.position);
+		}
+	})
+})
+
 // Handles click functionality on burger menu
 hamburger.addEventListener('click', burgerMenu);
+
+// SUPER HACKY SELECTING FOR NAVBAR SCROLLING ACTIVE CLASSES
+const nav1 = navBtns[0];
+const nav2 = navBtns[1];
+const nav3 = navBtns[2];
+const nav4 = navBtns[3];
+const header = document.getElementById('header').offsetHeight;
+const work = document.getElementById('work').offsetHeight;
+const about = document.getElementById('about').offsetHeight;
+const contact = document.getElementById('contact').offsetHeight;
 
 window.addEventListener('scroll', function() {
 	// Fades the main-header text and svg arrow when user scrollbars.
 	const opacity = 1 - (this.scrollY / 500);
     headerText.style.opacity = opacity;
     headerArrow.style.opacity = opacity;
+
+    // VERY HACKY WAY TO HANDLE NAVBAR SCROLLING ACTIVE CLASSES 
+    // MAKE IT PRETTY!!
+    if(document.documentElement.scrollTop <= header - 70) {
+    	changeActiveNav(nav1);
+    } else if(document.documentElement.scrollTop <= (header + work - 70)) {
+    	changeActiveNav(nav2);
+    } else if(document.documentElement.scrollTop <= (header + work + about - 70)) {
+    	changeActiveNav(nav3);
+    } else {
+    	changeActiveNav(nav4);
+    }
 });
 
 
