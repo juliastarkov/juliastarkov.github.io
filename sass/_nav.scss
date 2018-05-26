@@ -42,9 +42,12 @@ nav {
 				opacity: 0;
 				-webkit-transition: opacity .4s ease-in-out;
 				transition: opacity .4s ease-in-out;
+				&:active {
+					color: $green;
+				}
 			}
 			a.active {
-				color: $bodyTextColor;
+				color: $pink;
 				&:before {
 					content: "";
 					position: absolute;
@@ -54,7 +57,10 @@ nav {
 					left: 0;
 					visibility: visible;
 					transform: scaleX(1);
-					background-color: $bodyTextColor;
+					background-color: $pink;
+				}
+				&:before:active {
+					color: $green;
 				}
 			}
 		}
@@ -103,7 +109,7 @@ nav {
 				}
 				// Underline effect on nav links
 				a:hover {
-				   color: $bodyTextColor;
+				   color: $pink;
 				}
 				a:before {
 					content: "";
@@ -112,7 +118,7 @@ nav {
 					height: 2px;
 					bottom: 0;
 					left: 0;
-					background-color: $bodyTextColor;
+					background-color: $pink;
 					visibility: hidden;
 					-webkit-transform: scaleX(0);
 					transform: scaleX(0);

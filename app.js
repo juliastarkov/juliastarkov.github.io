@@ -19,7 +19,7 @@ app.post("/", (req, res) => {
 	const mailOptions = {
 		from: email,
 		name: name,
-		to: 'jstarkov8@gmail.com', 
+		to: 'jacobwylie@gmail.com', 
 		subject: 'New Message From Your Portfolio Contact Page',
 		text: message
 	};
@@ -34,7 +34,8 @@ app.post("/", (req, res) => {
 		} else {
 			// Simple log to server, add proper UI response to user at res.
 			// or add flash message to page https://www.npmjs.com/package/connect-flash 
-	    	console.log('\nRESPONSE SENT: ' + info.response+'\n');
+	    	console.log(`\nRESPONSE SENT:\n`);
+	    	console.log(info)
 	  		res.redirect('back');
 		}
 	});
