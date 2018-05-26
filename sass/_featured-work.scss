@@ -5,7 +5,7 @@
 	max-width: 1064px;
 	padding-top: 90px;
 	color: $bodyTextColor;
-	h1 {
+	h2 {
 		font-family: $Karla;
 		font-size: 30px;
 		letter-spacing: 0.02em;
@@ -13,9 +13,9 @@
 	}
 	button {
 		padding: 8px 25px;
-		border: 4px solid #e7e2e2;
+		border: 4px solid $grey;
 		border-radius: 3px;
-		background-color: #ffffff;
+		background-color: $white;
 		font-family: $Karla;
 		font-size: 16px;
 		letter-spacing: 0.05em;
@@ -23,13 +23,15 @@
 		cursor: pointer;
 		transition: all 0.4s ease-in-out;
 		&:hover {
-			color: #ffffff;
+			color: $white;
 			background-color: $pink;
+			border-color: $pink;
 		}
 		&:active {
 			transition: all 0s;
-			color: #ffffff;
+			color: $white;
 			background-color: $green;
+			border-color: $green;
 		}
 	}
 	.project {
@@ -39,7 +41,7 @@
 		margin-bottom: 40px;
 		border-radius: 5px;
 		padding: 40px 0px;
-		background-color: #ffffff;
+		background-color: $white;
 		.inner-container {
 			display: flex;
 			flex-direction: column;
@@ -53,7 +55,7 @@
 				flex-direction: column;
 				align-items: center;
 				width: 90%;
-				h2 {
+				h3 {
 					margin-bottom: 20px;
 					font-family: $Archivo;
 					font-size: 24px;
@@ -80,7 +82,7 @@
 @media screen and (min-width: 1064px) {
 	.featured-work {
 		width: 100%;
-		h1 {
+		h2 {
 			font-size: 48px;
 		}
 		.project {
@@ -96,7 +98,7 @@
 				.content {
 					align-items: flex-start;
 					margin-left: 5%;
-					h2 {
+					h3 {
 						font-size: 36px;
 					}
 					p {

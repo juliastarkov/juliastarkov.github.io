@@ -16,6 +16,7 @@
 				</span>
 			</button>
 			<div class="nav-menu">
+				<a href=""><img src="img/js-logo.png"></a>
 				<div class="nav-links">
 					<!-- Add class "active" if you want it to be 'highlighted when you're on that page -->
 					<a href="#" class="active">Home</a>
@@ -40,7 +41,7 @@
 	</header>
 
 	<section class="featured-work" id="work">
-		<h1>Featured Work</h1>
+		<h2>Featured Work</h2>
 
 	<!--To add another project:
 		- Copy entire code block for <div class="project">
@@ -50,7 +51,7 @@
 			<div class="inner-container">
 				<img src="img/botanic-icon.png">
 				<div class="content">
-					<h2>Botanic Author</h2>
+					<h3>Botanic Author</h3>
 					<p><span>Product Design</span> for an intuitive, code-free bot building tool.</p>
 					<a href="views/projects/botanic.html"><button>Learn More</button></a>
 				</div>
@@ -62,7 +63,7 @@
 			<div class="inner-container">
 				<img src="img/skype-icon.png">
 				<div class="content">
-					<h2>Skype</h2>
+					<h3>Skype</h3>
 					<p><span>UX and UI design</span> for a Skype job interview coach bot and avatar.</p>
 					<a href="views/projects/skype.html"><button>Learn More</button></a>
 				</div>
@@ -73,7 +74,7 @@
 			<div class="inner-container">
 				<img src="img/open_justice-icon.png">
 				<div class="content">
-					<h2>OpenJustice</h2>
+					<h3>OpenJustice</h3>
 					<p><span>UX and UI design</span> for an initiative led by the DOJ to make criminal justice data more transparent.</p>
 					<a href="views/projects/botanic.html"><button>Learn More</button></a>
 				</div>
@@ -83,14 +84,41 @@
 			<a href=""><button>See Resume</button></a>
 		</div>
 	</section>
-	<section id="about">
-		
+
+	<section class="contact-form" id="contact">
+		<h3>Hi, I'm Julia. Let's Chat!</h3>
+		<div class="form">
+			<img src="img/julia.png" class="img">
+			<div class="form-right">
+				<h3>Hi, I'm Julia. Let's Chat!</h3>
+				<form action="https://www.jacobwylie.com" method="POST" id="contactForm">
+					<input id="email" name="email" class="input" type="email" placeholder="email address">
+					<textarea id="message" name="message" placeholder="message"></textarea>
+					<div class="submit">
+						<button>Send</button>
+						<div>
+							<img src="img/linkedin-icon.png">
+							<img src="img/email-icon.png">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+		<div class="content">
+			<img src="img/julia.png">
+			<p>I'm a UX designer based in Oakland, CA.</p>
+			<p>Experienced in the full-cycle of design, I'm comfortable starting from user research, ending with pixel perfect mockups, and all of the good stuff in between.</p>
+			<p>When I'm not designing, you can find me riding my bike, getting crafty or trying to desperately figure out how to use the machines at the gym.</p>
+		</div>
 	</section>
-	<section id="contact">
-		
-	</section>
+
 	<footer>
-		<p>&copy; 2018 | Julia Starkov</p>
+		<p>Julia Starkov &nbsp;&nbsp;|&nbsp;&nbsp; UX /UI Design</p>
+		<div>
+			<img src="img/linkedin-icon.png">
+			<img src="img/email-icon.png">
+		</div>
 	</footer>
 
 	<!-- <script type="text/javascript" src="dist/build.min.js"></script> -->

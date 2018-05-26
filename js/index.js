@@ -17,7 +17,6 @@ if(document.querySelector('#main-header')) {
           // Get each content section's height for smooth scroll functionality
           mainHeaderHeight   = document.getElementById('main-header').offsetHeight,
           featuredWorkHeight = document.getElementById('work').offsetHeight,
-          aboutHeight        = document.getElementById('about').offsetHeight,
           contactHeight      = document.getElementById('contact').offsetHeight;
 	// Smooth Scrolling Nav Buttons
 	// https://gist.github.com/andjosh/6764939
@@ -87,10 +86,8 @@ if(document.querySelector('#main-header')) {
 	    	changeActiveNav(navBtns[0]);
 	    } else if(document.documentElement.scrollTop <= (mainHeaderHeight + featuredWorkHeight - 70)) {
 	    	changeActiveNav(navBtns[1]);
-	    } else if(document.documentElement.scrollTop <= (mainHeaderHeight + featuredWorkHeight + aboutHeight - 70)) {
+	    }  else {
 	    	changeActiveNav(navBtns[2]);
-	    } else {
-	    	changeActiveNav(navBtns[3]);
 	    }
 	});
 }

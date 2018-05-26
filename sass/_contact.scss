@@ -1,0 +1,173 @@
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 85%;
+	max-width: 1064px;
+	padding: 40px 0;
+	margin-top: 75px;
+	border-radius: 5px;
+	background-color: $white;
+	color: $bodyTextColor;
+	h3 {
+		width: 90%;
+		text-align: center;
+		margin-bottom: 25px;
+		font-family: $Archivo;
+		font-size: 24px;
+		letter-spacing: 0.05em;	
+	}
+	.form {
+		width: 90%;
+		margin-bottom: 30px;
+		h3 {
+			display: none;
+		}
+		.img {
+			display: none;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			input, textarea {
+				width: 97%;
+				border: 1px solid $grey;
+				border-radius: 5px;
+				padding: 10px 10px;
+				font-family: $Karla;
+				color: $bodyTextColor;
+				font-size: 18px;
+				letter-spacing: 0.05em;
+				outline: none;
+				&::-webkit-input-placeholder {
+				  font-family: $Karla;
+				  color: $grey;
+				  font-size: 18px;
+				  letter-spacing: 0.05em;
+				}
+				&::-moz-placeholder {
+			      font-family: $Karla;
+				  color: $grey;
+				  font-size: 18px;
+				  letter-spacing: 0.05em;
+				}
+			}
+			input {
+				margin-bottom: 10px;
+			}
+			textarea {
+				height: 125px;
+				margin-bottom: 20px;
+			}
+			.submit {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				button {
+					padding: 10px 50px;
+					height: 100%;
+					background-color: rgb(74, 74, 74);
+					border-radius: 3px;
+					font-family: $Karla;
+					font-size: 16px;
+					letter-spacing: 0.05em;
+					color: $white;
+					text-transform: uppercase;
+					cursor: pointer;
+					transition: all 0.4s ease-in-out;
+					&:hover {
+					color: $white;
+					background-color: $pink;
+					}
+					&:active {
+						transition: all 0s;
+						color: $white;
+						background-color: $green;
+					}
+				}
+				div {
+					text-align: right;
+					img {
+						width: 23%;
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+	}
+	hr {
+			width: 90%;
+			margin-bottom: 40px;
+			border-top: none;
+			border-bottom: 2px solid $grey;
+	}
+	.content {
+		width: 90%;
+		img {
+			float: left;
+			width: 40%;
+			margin-right: 15px;
+			border-radius: 3px;
+		}
+		p {
+			margin-bottom: 25px;
+			font-family: $Karla;
+			font-size: 18px;
+			letter-spacing: 0.05em;
+		}
+	}
+}
+
+
+@media screen and (min-width: 1064px) {
+	.contact-form {
+		h3 {
+			display: none;
+		}
+		.form {
+			display: flex;
+			align-items: flex-end;
+			.img {
+				display: inline-block;
+				width: 25%;
+				margin-right: 50px;
+				border-radius: 3px;
+			}
+			.form-right {
+				width: 100%;
+				h3 {
+					display: inline-block;
+					font-size: 36px;
+					text-align: left;
+				}
+			}
+		}
+	}
+	.content {
+		img {
+			display: none;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
