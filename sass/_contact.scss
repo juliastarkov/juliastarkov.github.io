@@ -68,7 +68,7 @@
 				button {
 					padding: 10px 50px;
 					height: 100%;
-					background-color: rgb(74, 74, 74);
+					background-color: $bodyTextColor;
 					border-radius: 3px;
 					font-family: $Karla;
 					font-size: 16px;
@@ -78,7 +78,7 @@
 					cursor: pointer;
 					transition: all 0.4s ease-in-out;
 					&:hover {
-					color: $white;
+					color: $bodyTextColor;
 					background-color: $pink;
 					}
 					&:active {
@@ -88,9 +88,11 @@
 					}
 				}
 				div {
-					text-align: right;
+					display: flex;
+					justify-content: flex-end;
 					img {
-						width: 23%;
+						width: 25%;
+						height: 100%;
 						margin-left: 15px;
 					}
 				}
@@ -109,6 +111,7 @@
 			float: left;
 			width: 40%;
 			margin-right: 15px;
+			margin-bottom: 5px;
 			border-radius: 3px;
 		}
 		p {

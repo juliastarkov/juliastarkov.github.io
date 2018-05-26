@@ -17,7 +17,7 @@
 			width: 100%;
 			height: 200px;
 			background-size: cover;
-			background-position: center center;
+			background-position: left center;
 			background-repeat: no-repeat;
 			.project-title {
 				width: 85%;
@@ -121,6 +121,7 @@
 			.project-bg {
 				height: 400px;
 				margin-top: 71px;
+				background-position: center center;
 				.project-title {
 					h1 {
 						font-size: 48px;

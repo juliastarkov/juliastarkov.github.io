@@ -25,7 +25,7 @@ header {
 	svg {
 		width: 50px;
 		position: relative;
-		bottom: 20px;
+		bottom: 40px;
 		-moz-animation: bounce 2s infinite;
 		-webkit-animation: bounce 2s infinite;
 		animation: bounce 2s infinite;
@@ -94,6 +94,9 @@ header {
 			h2 {
 				font-size: 36px;
 			}
+		}
+		svg {
+			bottom: 20px;
 		}
 	}
 }
