@@ -97,6 +97,9 @@ nav {
 			transition: opacity 0.5s ease-in-out, visibility 1s;
 		}
 		.nav-menu {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 			position: relative;
 			height: unset;
 			width: 100%;
