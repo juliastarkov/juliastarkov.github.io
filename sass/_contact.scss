@@ -96,6 +96,11 @@
 						width: 70%;
 						height: 100%;
 						margin-left: 15px;
+						border-radius: 50%;
+						transition: all 0.4s ease-in-out;
+						&:hover {
+							background-color: $pink;
+						}
 					}
 				}
 			}
