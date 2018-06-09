@@ -8,7 +8,7 @@
 	h2 {
 		font-family: $Karla;
 		font-size: 30px;
-		letter-spacing: 0.02em;
+		letter-spacing: 0.01em;
 		margin-bottom: 40px;
 	}
 	button {
@@ -66,7 +66,8 @@
 					font-family: $Karla;
 					font-size: 18px;
 					text-align: center;
-					letter-spacing: 0.05em;
+					letter-spacing: 0.00em;
+					line-height: 1.5em;
 					span {
 						font-weight: 700;
 					}

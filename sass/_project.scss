@@ -30,11 +30,11 @@
 					letter-spacing: 0.05em;
 				}
 				h2 {
-					margin-bottom: 30px;
+					margin-bottom: 50px;
 					font-family: $Karla;
 					font-size: 16px;
 					color: $white;
-					letter-spacing: 0.02em;
+					letter-spacing: 0em;
 				}
 			}
 		}
@@ -68,18 +68,29 @@
 		.content {
 			width: 95%;
 			margin: 0 auto;
-			letter-spacing: 0.03em;
+			letter-spacing: 0.01em;
 			h4 {
 				font-family: $Archivo;
 				font-size: 18px;
 				color: $bodyTextColor;
 				margin-bottom: 10px;
 			}
-			p, ul {
+			p {
 				font-family: $Karla;
 				font-size: 14px;
 				color: $bodyTextColor;
 				margin-bottom: 15px;
+				line-height: 1.5em;
+				span {
+						font-weight: 700;
+					}
+			}
+			ul {
+				font-family: $Karla;
+				font-size: 14px;
+				color: $bodyTextColor;
+				margin-bottom: 15px;
+				line-height: 1.3em;
 			}
 			img {
 				width: 100%;
