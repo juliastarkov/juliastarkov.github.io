@@ -14,9 +14,14 @@ footer {
 	}
 	div {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: center;
+		a {
+			display: flex;
+			justify-content: center;
+			width: 35%
+		}
 		img {
-			width: 25%;
+			width: 70%;
 		}
 	}
 

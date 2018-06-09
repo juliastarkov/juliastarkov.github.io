@@ -15,7 +15,6 @@
 		margin-bottom: 25px;
 		font-family: $Archivo;
 		font-size: 24px;
-		letter-spacing: 0.05em;	
 	}
 	.form {
 		width: 90%;
@@ -39,31 +38,29 @@
 				font-family: $Karla;
 				color: $bodyTextColor;
 				font-size: 18px;
-				letter-spacing: 0.05em;
 				outline: none;
 				&::-webkit-input-placeholder {
 				  font-family: $Karla;
 				  color: $grey;
 				  font-size: 18px;
-				  letter-spacing: 0.05em;
 				}
 				&::-moz-placeholder {
 			      font-family: $Karla;
 				  color: $grey;
 				  font-size: 18px;
-				  letter-spacing: 0.05em;
 				}
 			}
 			input {
-				margin-bottom: 10px;
+				margin-bottom: 20px;
 			}
 			textarea {
 				height: 125px;
-				margin-bottom: 20px;
+				margin-bottom: 25px;
 			}
 			.submit {
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 				width: 100%;
 				button {
 					padding: 10px 50px;
@@ -72,7 +69,6 @@
 					border-radius: 3px;
 					font-family: $Karla;
 					font-size: 16px;
-					letter-spacing: 0.05em;
 					color: $white;
 					text-transform: uppercase;
 					cursor: pointer;
@@ -90,8 +86,14 @@
 				div {
 					display: flex;
 					justify-content: flex-end;
+					align-items: center;
+					width: 75px;
+					a {
+						display: flex;
+						justify-content: flex-end;
+					}
 					img {
-						width: 25%;
+						width: 70%;
 						height: 100%;
 						margin-left: 15px;
 					}
@@ -118,7 +120,10 @@
 			margin-bottom: 25px;
 			font-family: $Karla;
 			font-size: 18px;
-			letter-spacing: 0.05em;
+			line-height: 1.25em;
+			&:first-of-type {
+				margin-top: 115px;
+			}
 		}
 	}
 }
@@ -126,15 +131,21 @@
 
 @media screen and (min-width: 1064px) {
 	.contact-form {
+		padding: 87px 0 62px 0;
 		h3 {
 			display: none;
+			margin-bottom: 30px;
+			margin-left: -5px;
 		}
 		.form {
 			display: flex;
 			align-items: flex-end;
+			margin-bottom: 55px;
+			width: 69%;
 			.img {
 				display: inline-block;
-				width: 25%;
+				width: 242px;
+				height: 405px;
 				margin-right: 50px;
 				border-radius: 3px;
 			}
@@ -145,11 +156,27 @@
 					font-size: 36px;
 					text-align: left;
 				}
+				form {
+					width: 99%;
+					.submit {
+						div {
+							width: 20%;
+						}
+					}
+				}
 			}
+		}
+		hr {
+			margin-bottom: 60px;
 		}
 		.content {
 			img {
 				display: none;
+			}
+			p {
+				&:first-of-type {
+					margin-top: 0px;
+				}
 			}
 		}
 	}

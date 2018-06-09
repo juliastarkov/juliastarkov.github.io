@@ -1,6 +1,7 @@
 // Select needed elements and store as variables
-const hamburger             = document.querySelector('.hamburger'),
-      navMenu               = document.querySelector('.nav-menu');
+const hamburger = document.querySelector('.hamburger'),
+	  nav       = document.querySelector('nav'),
+      navMenu   = document.querySelector('.nav-menu');
 
 // Functionality for burger menu
 function burgerMenu() {
@@ -8,6 +9,20 @@ function burgerMenu() {
 	navMenu.classList.toggle('open');
 }
 hamburger.addEventListener('click', burgerMenu);
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+	if(window.innerWidth >= 1064) {
+		let currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos) {
+			nav.style.top = "0";
+		} else {
+			nav.style.top = "-71px";
+		}
+		prevScrollpos = currentScrollPos;
+	}	
+}
 
 // Only Run JS Below for Start Page
 if(document.querySelector('#main-header')) {
@@ -43,12 +58,12 @@ if(document.querySelector('#main-header')) {
 	};
 
 	// Removes 'active' class from all nav-link and adds to clicked link
-	function changeActiveNav(thisNav) {
-		navBtns.forEach(nav => {
-			nav.classList.remove('active');
-		})
-		thisNav.classList.add('active');
-	}
+	// function changeActiveNav(thisNav) {
+	// 	navBtns.forEach(nav => {
+	// 		nav.classList.remove('active');
+	// 	})
+	// 	thisNav.classList.add('active');
+	// }
 
 	// For each nav link, find the corresponding content's position on page and assign to node object
 	// 'Smooth Scroll' to position on page when nav-link is clicked
@@ -61,7 +76,7 @@ if(document.querySelector('#main-header')) {
 		nav.addEventListener('click', function(e) {
 			e.preventDefault();
 			// Remove active class from all nav-links and assign to clicked nav-link
-			changeActiveNav(this);
+			// changeActiveNav(this);
 			// Scroll to content
 			scrollTo(document.documentElement, nav.position, 750);
 		})
@@ -82,13 +97,13 @@ if(document.querySelector('#main-header')) {
 	    // MAKE IT PRETTY!!
 	    // Follow pattern to add another section
 	    // '- 70' allows the scroll to go past the nav height
-	    if(document.documentElement.scrollTop <= mainHeaderHeight - 70) {
-	    	changeActiveNav(navBtns[0]);
-	    } else if(document.documentElement.scrollTop <= (mainHeaderHeight + featuredWorkHeight - 70)) {
-	    	changeActiveNav(navBtns[1]);
-	    }  else {
-	    	changeActiveNav(navBtns[2]);
-	    }
+	    // if(document.documentElement.scrollTop <= mainHeaderHeight - 70) {
+	    // 	changeActiveNav(navBtns[0]);
+	    // } else if(document.documentElement.scrollTop <= (mainHeaderHeight + featuredWorkHeight - 70)) {
+	    // 	changeActiveNav(navBtns[1]);
+	    // }  else {
+	    // 	changeActiveNav(navBtns[2]);
+	    // }
 	});
 }
 
