@@ -8,7 +8,7 @@ const express    = require('express'),
         			
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post("/", (req, res) => {
+app.post("https://www.jacobwylie.com/julia", (req, res) => {
 	const name = req.body.name;
 	const email = req.body.email;
 	const message = req.body.message;
