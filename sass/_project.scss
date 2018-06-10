@@ -27,7 +27,6 @@
 					font-family: $Archivo;
 					font-size: 36px;
 					color: $white;
-					letter-spacing: 0.05em;
 				}
 				h2 {
 					margin-bottom: 50px;
@@ -53,7 +52,6 @@
 			margin-bottom: 40px;
 			font-family: $Archivo;
 			font-size: 20px;
-			letter-spacing: 0.05em;
 			color: #000000;
 			&:before {
 				content: "";
@@ -68,7 +66,31 @@
 		.content {
 			width: 95%;
 			margin: 0 auto;
+<<<<<<< HEAD
 			letter-spacing: 0.01em;
+=======
+			line-height: 1.5em;
+			.content-row {
+				div {
+					margin-bottom: 50px;
+					p {
+						width: 100%;
+						margin-bottom: 10px;
+					}
+					ul {
+						margin-bottom: 10px;
+						margin-left: 10px;
+						li {
+							text-indent: -10px;
+							&:before {
+								content: "- ";
+
+							}
+						}
+					}
+				}
+			}
+>>>>>>> master
 			h4 {
 				font-family: $Archivo;
 				font-size: 18px;
@@ -130,10 +152,10 @@
 	.project {
 		header {
 			.project-bg {
-				height: 400px;
-				margin-top: 71px;
+				height: 457px;
 				background-position: center center;
 				.project-title {
+					margin-bottom: 40px;
 					h1 {
 						font-size: 48px;
 					}
@@ -158,8 +180,21 @@
 				}
 			}
 			.content {
-				width: 85%;
+				width: 78%;
 				margin: 0;
+				.content-row {
+					display: flex;
+					div {
+						width: 83%;
+					}
+					h4 {
+						width: 15%;
+						margin-right: 2%;
+					}
+					p {
+						width: 83%;
+					}
+				}
 				h4 {
 					margin-bottom: 15px;
 					font-size: 20px;

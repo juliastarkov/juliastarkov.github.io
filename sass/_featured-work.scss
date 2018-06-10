@@ -18,7 +18,6 @@
 		background-color: $white;
 		font-family: $Karla;
 		font-size: 16px;
-		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		cursor: pointer;
 		transition: all 0.4s ease-in-out;
@@ -59,14 +58,16 @@
 					margin-bottom: 20px;
 					font-family: $Archivo;
 					font-size: 24px;
-					letter-spacing: 0.05em;	
 				}
 				p {
 					margin-bottom: 25px;
 					font-family: $Karla;
 					font-size: 18px;
 					text-align: center;
+<<<<<<< HEAD
 					letter-spacing: 0.00em;
+=======
+>>>>>>> master
 					line-height: 1.5em;
 					span {
 						font-weight: 700;
@@ -88,17 +89,20 @@
 		}
 		.project {
 			width: 100%;
+			padding:0;
+			min-height: 352px;
 			.inner-container {
 				display: flex;
 				flex-direction: row;
 				align-items: center;
-				max-width: 594px;
+				width: 780px;
 				img {
-					width: 30%;
+					width: 35%;
+					margin-bottom: 0;
 				}
 				.content {
 					align-items: flex-start;
-					margin-left: 5%;
+					margin-left: 10%;
 					h3 {
 						font-size: 36px;
 					}
@@ -112,7 +116,7 @@
 			flex-direction: row-reverse;
 			.content {
 				margin-left: 0;
-				margin-right: 5%;
+				margin-right: 10%;
 			}
 		}
 		.resume {
