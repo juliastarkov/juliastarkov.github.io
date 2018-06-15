@@ -1,7 +1,9 @@
 // Select needed elements and store as variables
 const hamburger = document.querySelector('.hamburger'),
 	  nav       = document.querySelector('nav'),
-      navMenu   = document.querySelector('.nav-menu');
+      navMenu   = document.querySelector('.nav-menu'),
+      iconBG    = document.querySelector('.icon-bg'),
+      starburst = [...document.querySelectorAll('.starbust')];
 
 // Functionality for burger menu
 function burgerMenu() {
@@ -93,6 +95,11 @@ if(document.querySelector('#main-header')) {
 	    mainHeaderText.style.opacity = opacity;
 	    headerArrow.style.opacity = opacity;
 
+	    // Rotates the Starbursts
+    	starburst.forEach(star => {
+			star.style.transform = `rotate(${window.pageYOffset / 5}deg)`;
+			// star.style.opacity = opacity;
+		})
 	    // VERY HACKY WAY TO HANDLE NAVBAR SCROLLING ACTIVE CLASSES 
 	    // MAKE IT PRETTY!!
 	    // Follow pattern to add another section
