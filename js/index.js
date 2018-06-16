@@ -91,14 +91,15 @@ if(document.querySelector('#main-header')) {
 	// Handles scroll functionality
 	window.addEventListener('scroll', function() {
 		// Fades the main-header text and svg arrow
-		const opacity = 1 - (this.scrollY / 500);
+		const opacity = 1 - (this.scrollY / 750);
 	    mainHeaderText.style.opacity = opacity;
 	    headerArrow.style.opacity = opacity;
+	    iconBG.style.opacity = opacity;
+	    iconBG.style.top = `${window.pageYOffset / 7}px`
 
 	    // Rotates the Starbursts
     	starburst.forEach(star => {
 			star.style.transform = `rotate(${window.pageYOffset / 5}deg)`;
-			// star.style.opacity = opacity;
 		})
 	    // VERY HACKY WAY TO HANDLE NAVBAR SCROLLING ACTIVE CLASSES 
 	    // MAKE IT PRETTY!!
