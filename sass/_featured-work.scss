@@ -1,7 +1,9 @@
 .featured-work {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 	max-width: 1064px;
 	padding-top: 90px;
 	color: $bodyTextColor;

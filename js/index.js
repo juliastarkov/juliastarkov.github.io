@@ -24,15 +24,21 @@ window.onscroll = function() {
 	}	
 }
 
-// Only Run JS Below for Start Page
+// Only Run Code Below for Start Page
 if(document.querySelector('#main-header')) {
 	const mainHeaderText     = document.querySelector('#main-header .title'),
           headerArrow        = document.querySelector('#main-header svg'),
           navBtns            = [...document.querySelectorAll('.nav-links a')],
+          iconBG             = document.querySelector('.icon-bg'),
+          iconBGHead         = document.querySelector('#main-header .icon-bg'),
+          iconBGWork         = document.querySelector('#work .icon-bg'),
+          iconBGContact      = document.querySelector('#contact .icon-bg'),
+          starburst          = [...document.querySelectorAll('.starbust')],
           // Get each content section's height for smooth scroll functionality
           mainHeaderHeight   = document.getElementById('main-header').offsetHeight,
           featuredWorkHeight = document.getElementById('work').offsetHeight,
           contactHeight      = document.getElementById('contact').offsetHeight;
+
 	// Smooth Scrolling Nav Buttons
 	// https://gist.github.com/andjosh/6764939
 	function scrollTo(element, to, duration) {
@@ -88,11 +94,23 @@ if(document.querySelector('#main-header')) {
 	//////////////////////////////////////////////////////////
 	// Handles scroll functionality
 	window.addEventListener('scroll', function() {
-		// Fades the main-header text and svg arrow
-		const opacity = 1 - (this.scrollY / 500);
+		// Fades the main-header text, svg arrow, header bg icons
+		const opacity = 1 - (this.scrollY / 750);
 	    mainHeaderText.style.opacity = opacity;
 	    headerArrow.style.opacity = opacity;
+	    iconBGHead.style.opacity = opacity;
 
+	    // Offset scrolling of header bg icons
+	    iconBGHead.style.top = `${window.pageYOffset / 5}px`;
+	    // Offset scrolling of work bg icons
+	    iconBGWork.style.top = `${(window.pageYOffset + mainHeaderHeight) / 5}px`;
+	    // Offset scrolling of contact bg icons
+	    iconBGContact.style.top = `${(window.pageYOffset - 2000) / 5}px`;
+
+	    // Rotates the Starbursts
+    	starburst.forEach(star => {
+			star.style.transform = `rotate(${window.pageYOffset / 8}deg)`;
+		})
 	    // VERY HACKY WAY TO HANDLE NAVBAR SCROLLING ACTIVE CLASSES 
 	    // MAKE IT PRETTY!!
 	    // Follow pattern to add another section

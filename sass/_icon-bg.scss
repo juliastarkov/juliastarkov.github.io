@@ -1,0 +1,236 @@
+.icon-bg {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	img {
+		position: absolute;
+	}
+	.starbust {
+		width: 85px;
+	}
+	.oval1 {
+		width: 80px;
+	}
+	.oval2 {
+		width: 45px;
+	}
+	.oval3 {
+		width: 35px;
+	}
+}
+#main-header {
+	.icon-bg {
+		img {
+			&:nth-of-type(1) {
+				top: 300px;
+				left: -75px;
+			}
+			&:nth-of-type(2) {
+				top: 550px;
+				right: -25px;
+			}
+			&:nth-of-type(3) {
+				top: 170px;
+				right: -50px;
+			}
+			&:nth-of-type(4) {
+				top: 600px;
+				left: -60px;
+			}
+			&:nth-of-type(5) {
+				top: 750px;
+				right: -25px;
+			}
+		}
+	}
+}
+#work {
+	.icon-bg {
+		img {
+			&:nth-of-type(1) {
+				top: -200px;
+				left: 5px;
+			}
+			&:nth-of-type(2) {
+				top: 500px;
+				right: 0px;
+			}
+			&:nth-of-type(3) {
+				top: 100px;
+				right: 0px;
+			}
+			&:nth-of-type(4) {
+				top: 400px;
+				left: 0px;
+			}
+			&:nth-of-type(5) {
+				top: 850px;
+				right: 0px;
+			}
+		}
+	}
+}
+
+#contact {
+	.icon-bg {
+		img {
+			&:nth-of-type(1) {
+				top: -160px;
+				left: -25px;
+			}
+			&:nth-of-type(2) {
+				top: 300px;
+				right: -50px;
+			}
+			&:nth-of-type(3) {
+				top: 400px;
+				left: -30px;
+			}
+			&:nth-of-type(4) {
+				top: 700px;
+				right: -25px;
+			}
+			&:nth-of-type(5) {
+				top: 800px;
+				left: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1064px) {
+	#main-header {
+	.icon-bg {
+		img {
+			&:nth-of-type(1) {
+
+			}
+			&:nth-of-type(2) {
+
+			}
+			&:nth-of-type(3) {
+				top: 250px;
+				right: 0px;
+			}
+			&:nth-of-type(4) {
+				top: 500px;
+				left: -175px;
+			}
+			&:nth-of-type(5) {
+				top: 850px;
+				right: -100px;
+			}
+		}
+	}
+}
+#work {
+	.icon-bg {
+		img {
+			&:nth-of-type(1) {
+				top: -250px;
+				left: -50px;
+			}
+			&:nth-of-type(2) {
+				right: -50px;
+			}
+			&:nth-of-type(3) {
+				top: 45px;
+				right: -80px;
+			}
+			&:nth-of-type(4) {
+				left: -25px;
+			}
+			&:nth-of-type(5) {
+				right: -25px;
+			}
+		}
+	}
+}
+
+#contact {
+	.icon-bg {
+		img {
+			&:nth-of-type(1) {
+				top: -0px;
+				left: -50px;
+			}
+			&:nth-of-type(2) {
+
+			}
+			&:nth-of-type(3) {
+
+			}
+			&:nth-of-type(4) {
+
+			}
+			&:nth-of-type(5) {
+
+			}
+		}
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
