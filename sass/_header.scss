@@ -11,13 +11,14 @@ header {
 		align-items: center;
 		height: 100%;
 		h1 {
-			font-family: $Karla;
+			font-family: $Playfair;
+			font-weight: 700;
 			color: $bodyTextColor;
 			font-size: 40px;
 			margin-bottom: 15px;
 		}
 		h2 {
-			font-family: $Archivo;
+			font-family: $Karla;
 			color: $bodyTextColor;
 			font-size: 26px;
 		}
