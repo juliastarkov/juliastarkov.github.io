@@ -3,11 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<title>Julia Starkov UX|UI Design</title>
 	<link rel="stylesheet" type="text/css" href="../../dist/build.min.css">
 </head>
-<body>
-	<header class="project-header">
+<body class="project botanic">
+	<header>
 		<nav>
 			<button class="hamburger hamburger--spin-r" type="button">
 				<span class="hamburger-box">
@@ -15,54 +22,65 @@
 				</span>
 			</button>
 			<div class="nav-menu">
+				<a href="../../index.html"><img src="../../img/js-logo.png"></a>
 				<div class="nav-links">
+					<!-- Add class "active" if you want it to be 'highlighted when you're on that page -->
 					<a href="/#work">Work</a>
-					<a href="#">Contact</a>
+					<a href="/#contact">Contact</a>
 				</div>
 			</div>
 		</nav>
+		<div class="project-bg">
+			<div class="project-title">
+				<h1>OpenJustice Website Redesign</h1>
+				<h2>Promoting transparency in California’s criminal justice system</h2>
+			</div>
+		</div>
 	</header>
 
-	
 	<section class="overview">
 		<h3>Overview</h3>
 		<div class="content">
-			<p>Botanic Author is an enterprise-level product that empowers users to develop and deploy multi-modal bots across multiple channels. I was the sole designer working through the full-cycle of product research, strategy and design.</p>
+			<p>OpenJustice is an initiative led by the California Department of Justice to make criminal justice data accessible to everyone in an effort to be “smart on crime.”</p>
 						<div class="lists">
 				<div class="list">
 					<h4>Role</h4>
 					<ul>
-						<li>Product Designer & UX Researcher </li>
+						<li>UX/UI Designer and Researcher </li>
 					</ul>
 				</div>
 				<div class="list">
 					<h4>Team</h4>
 					<ul>
-						<li>I was the sole researcher and designer working with four developers and a content strategist</li>
+						<li>I collaborated with a UX designer for the research and initial prototyping and I was the sole visual designer</li>
 					</ul>
 				</div>
 				<div class="list">
 					<h4>Deliverables</h4>
 					<ul>
 						<li>Research</li>
-						<li>User Flows</li>
+						<li>Personas</li>
+						<li>Sitemap</li>
 						<li>Wireframes</li>
 						<li>Mockups</li>
-						<li>Beta Testing</li>
 					</ul>
 				</div>
 			</div>
 			<div class="content-row">
 				<h4>The Challenge</h4>
 				<div>
-					<p>Botanic Author came out of desire to provide the building blocks for creating conversational interfaces to Botanic’s customers. With many competitors already in the space, we needed to create a tool that also differentiated in the market.
+					<p>“It seems like the site tries to cater to everyone at once, but is unsuccessful at both ends”
+						<br><br>OpenJustice came to us with a problem: how can criminal justice data be made approachable for laypeople while simultaneously being useful and effective for more active data users? Our client had a broad idea of the site’s issues and came to us for recommendations on what changes need to be made to make it more user-friendly. 
 					</p>
 				</div>
 			</div>
 			<div class="content-row">
 				<h4>The Solution</h4>
 				<div>
-					<p>A widely accessible tool that incorporates a visual, intuitive approach to building a bot that requires no knowledge of code in order to empower users to create their own conversational interfaces. 
+					<p>A two tiered approach to navigation directing different types of users to the appropriate data sets
+						<br><br>The key insight we found in our research was that users tended to approach data in one of two ways: as an expert interested in digging deep to find a specific data set OR as someone who is interested in the information but would prefer a more curated experience. This insight helped drive our understanding of the problem and shaped our ultimate design. 
+						<br><br><img src="../../img/OJ_Desktop.png">
+ 
 					</p>
 				</div>
 			</div>
@@ -73,69 +91,43 @@
 		<h3>Process</h3>
 			<div class="content">
 			<br><h4>Research</h4>
-				<p>Initial research was conducted to gather a greater understanding of the market and potential competitors. Currently, there is a growing number of bot building tools. I explored their UI and UX and found:
-					<br><br>– Competitors’ products tend to have shoddy usability and are overly complicated. 
-					<br><br>– Competitors tend to focus on chatbots and voice assistants, leaving open space for a tool that automates visual avatars. 
-				<br><br>User research was an interesting challenge. My number one point person was our content writer and strategist, who would be a direct, internal user for the tool. Working with him was an integral part of learning about best practices for writing for bots and tool feature requirements. 
-				</p>
-				<img src="../../img/botanic-project-1.png">
-				<br><br>
+				<br><img src="../../img/javier.png">
+				<p>In two and a half short weeks were were able to speak to 23 individuals regarding OpenJustice (11 laypeople, 6 data scientists, 4 journalists and 2 members of law enforcement). Usability testing and user interviews were vital for us in determining the major flaws in the current site. It became abundantly clear that the use of jargon, inconsistent navigation, unclear filtering and an overwhelming amount of copy made the site very confusing.
+				<br><br>The next step was to develop personas in order to guide our design decisions and help narrate the story to the client. The three personas were all based on our research and show the different types of users that may frequent the site.
+				<br><br>PERSONA CAROUSEL!
+			</p>
 			<h4>Strategy</h4>
-				<p>Since writing bot content will inevitably be a new experience for most users, developing a clear product flow was crucial for usability. Our goal was to mirror the way bot content writers break out conversation while maintaining clear, visual paths through a system that often becomes unwieldy and complicated.
+				<p>After gathering great insights from the users and the stakeholders, we began visualizing the best way to restructure the high and low level navigation on the site. The actual content on the site was excellent; we just needed to come up with a way to let specific users find the data sets (and their accompanying features) in an easy and efficient way. The following is a  before and after view of the breakdown of the site. The updated sitemap establishes a clear hierarchy and allows for scaling in the future.
+					<br><br>– Everyone gets lost and confused on the site: This was an issue for a range of users. By making navigation consistent and minimal we made it much easier for a user to understand where they are in the site and exactly what page they’re looking at. By recommending the removal of jargon words (or the ability to hover-define them) we dealt with the issues of terminology confusion. Finally, by paring down overwhelming copy we allowed the users to get to what they were looking for immediately. 
+					<br><br>– Visually relaying the message: Compared to other government websites, OpenJustice is clean and minimal in its visual design. However, users did note on some glaring inconsistencies in brand. I approached the visual redesign with OpenJustice’s message in mind: a modern, user-centered approach to data visualization that still retains the authority and credibility of a government website.
+					<br><br>– Accounting for future growth: OpenJustice is a relatively new site and the stakeholders were very excited at the prospect of building it out and adding various features in the future. Our design accounts for this by splitting up the current pages into two main categories, allowing for nesting in the future or the addition of a third and fourth category as needed. 
 				</p>
 				<br><br>
-				<img src="../../img/use-case-authors-tool.png">
-				<br><br>
-			<h4>Ideation | Wireframes</h4>
-				<p>Wireframing began with a series of paper sketches and whiteboarding in collaboration with the team. In order to heighten usability and develop an intuitive, plug and play tool, I focused primarily on:
-				</p>
-					<ul>
-						<li>– Nesting: The product has a ton of functionality, but a lot of the features are for rare (yet crucial) use cases. Nesting certain parts in order to provide default settings with the option of added granularity aided in designing an approachable and uncluttered workspace.</li><br>
-						<li>– Consistent modal interactions: Modals contain fields/options and are used throughout the product. The choice of a modal (over a separate page) was a way to keep interactions grounded in the main Workspace area while giving focus to specific interactions.</li><br>
-						<li>– Functional hover states: Another variation of nesting, many of the components in the tool have hover states that also expose the option to edit/delete. This is a learnable behavior that helps keep the workspace minimal, while also unlocking additional functionality just a click away. </li>
-					</ul>
-				<p>(Currently, the wireframes are under NDA until official product launch)
-				</p>
-			<h4>Ideation | Mockups</h4>
-				<p>Working on the wireframes was an incredibly iterative and collaborative process. Understanding technical limitations/capabilities as well as bot creation best practices and requirements was crucial to the success of the product development cycle and ultimate result. 
-					<br><br>Visual design was used in the tool as a way to enhance the experience through:
-						<ul>
-							<li>– Consistency in visual language: Using a tight color scheme and repetitive visual elements (such as icons and button shapes), the entire product has a sense of polish and serves to avoid any distraction from the flow. </li><br>
-							<li>– Clear calls to action: The use of bright colors is sparse and used to clearly indicate actionable elements. Hover states on all clickable options were also important as way to give users immediate feedback on the state of an element.</li>
-						</ul> 
-				<p>I developed dozens of visual assets, including pixel-perfect mockups, design specifications and handcrafted icon files. I managed the front end development of these mockups and worked closely with backend developers to ensure proper and timely application.
-					<br><br>(Currently, the mockups and other assets are under NDA until official product launch)
-				</p>
-			<h4>Beta Testing Program & Iteration</h4>
-				<p>Botanic was able to secure a handful of potential customers interested in participating in our beta program. I managed the entire UX/UI research segment of the program. 
-					<br><br>Consisting of a round of usability testing and user interviews, we were able to gather valuable insights about the strengths and weaknesses of the product with a group of users that were very interested in creating their own bots. These insights were incredibly helpful in determining priorities in terms of product enhancements, feature requests and general design upgrades. Collaborating closely with the development team, iteration is ongoing.
+			<h4>Ideation</h4>
+				<p> 
 				</p>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+
 	<section class="section-2">
 		<h3>Results</h3>
-			<p>The initial wireframes I developed were used in a deck to successfully help secure investment for Botanic. This was a great opportunity for us and gave us the funding to continue to build out the product. 
-				<br><br>Personally, working through the full-cycle of product design was an awesome challenge. It reinforced the absolute necessity of an open, collaborative, and iterative team in creating successful and thoughtful products. 
-				<br><br>We’re currently iterating and working on ways to enhance the Author’s Tool even further and starting preparations for official product launch in July 2018. 
+		<div class="content">
+			<p>At the end of our two and a half week sprint we presented our findings and recommendations to the client and handed off the deliverables. The client was thrilled with the research and solutions we provided because it helped clear up a lot of internal debates on how to present the data and structure the site. Ultimately, the site was updated and redesigned keeping all of our recommendations in mind.
+			<br><br>By streamlining navigation and cleaning up the confusing elements of the site, we helped OpenJustice further promote the sense of transparency they are working towards. Users from all backgrounds can now feel confident that the data they are viewing (and all accompanying features and copy) is relevant, helpful and clear. Through this, we help drive the goal of creating a more open California. 
 			</p>
-			</div>
 		</div>
 	</section>
 
-
-
-
-
-
-
-
 	<footer>
-		<p>&copy; 2018 | Julia Starkov</p>
+		<p>Julia Starkov &nbsp;&nbsp;|&nbsp;&nbsp; UX / UI Design</p>
+		<div>
+			<a href="https://www.linkedin.com/in/juliastarkov/"><img src="../../img/linkedin-icon.png"></a>
+			<a href="mailto:jstarkov8@gmail.com"><img src="../../img/email-icon.png"></a>
+		</div>
 	</footer>
-
+	<!-- <script type="text/javascript" src="dist/build.min.js"></script> -->
 	<script type="text/javascript" src="../../dist/build.min.js"></script>
 </body>
 </html>
