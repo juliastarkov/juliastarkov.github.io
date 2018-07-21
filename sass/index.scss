@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow|Karla:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Archivo+Narrow|Karla:400,700');
 
 // Clean up any browser implemented styles
 @import 'reset';
@@ -6,6 +6,7 @@
 // Style Variables
 $Karla: 'Karla', sans-serif;
 $Archivo: 'Archivo Narrow', sans-serif;
+$Playfair: 'Playfair Display', serif;
 $navTextColor: #ffffff;
 $bodyTextColor: #4a4a4a;
 $pink: #d7cddb;

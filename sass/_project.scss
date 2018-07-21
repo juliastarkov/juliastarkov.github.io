@@ -24,7 +24,8 @@
 				max-width: 1064px;
 				h1 {
 					margin-bottom: 30px;
-					font-family: $Archivo;
+					font-family: $Playfair;
+					font-weight: 700;
 					font-size: 36px;
 					color: $white;
 				}
@@ -49,9 +50,10 @@
 			position: relative;
 			display: inline-block;
 			margin-bottom: 40px;
-			font-family: $Archivo;
+			font-family: $Playfair;
+			font-weight: 700;
 			font-size: 20px;
-			color: #000000;
+			color: #4A4A4A;
 			&:before {
 				content: "";
 				position: absolute;
@@ -87,7 +89,8 @@
 				}
 			}
 			h4 {
-				font-family: $Archivo;
+				font-family: $Playfair;
+				font-weight: 700;
 				font-size: 18px;
 				color: $bodyTextColor;
 				margin-bottom: 10px;
@@ -97,6 +100,7 @@
 				font-size: 14px;
 				color: $bodyTextColor;
 				margin-bottom: 15px;
+				line-height: 25px;
 			}
 			img {
 				width: 100%;
@@ -113,7 +117,7 @@
 						li {
 							list-style: none;
 							display: inline-block;
-							width: 125px;
+							width: 150px;
 							margin-right: 5%;
 							margin-bottom: 10px;
 						}
