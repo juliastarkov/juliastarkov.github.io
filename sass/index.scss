@@ -30,6 +30,17 @@ body.main-body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5fff3', endColorstr='#e5fff3',GradientType=0 ); /* IE6-9 */
 }
 
+.quote-text {
+	font-family: $Karla;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.bullet-point {
+	list-style: disc;
+	margin-left: 15px;
+}
+
 // Import your other Sass files here. Note that styles will overwrite/cascade
 // based on order of import
 @import 'header';
