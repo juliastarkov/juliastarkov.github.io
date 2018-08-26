@@ -34,10 +34,12 @@ body.main-body {
 	font-family: $Karla;
 	font-style: italic;
 	font-weight: bold;
+	margin-left: 15px;
 }
 
 .bullet-point {
-	list-style: disc;
+	list-style-type: disc;
+	font-family: $Karla;
 	margin-left: 15px;
 }
 
