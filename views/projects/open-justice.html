@@ -13,6 +13,7 @@
 	<title>Julia Starkov UX|UI Design</title>
 	<link rel="stylesheet" type="text/css" href="../../dist/build.min.css">
 	<link rel="stylesheet" type="text/css" href="../../dist/simpleSlider.min.css">
+
 </head>
 <body class="project open-justice">
 	<header>
@@ -99,15 +100,68 @@
 				<p>In two and a half short weeks were were able to speak to 23 individuals regarding OpenJustice (11 laypeople, 6 data scientists, 4 journalists and 2 members of law enforcement). Usability testing and user interviews were vital for us in determining the major flaws in the current site. It became abundantly clear that the use of jargon, inconsistent navigation, unclear filtering and an overwhelming amount of copy made the site very confusing.<br><br><br>
 				<img src="../../img/javier.png">
 				<br><br>The next step was to develop personas in order to guide our design decisions and help narrate the story to the client. The three personas were all based on our research and show the different types of users that may frequent the site.
-				<br><br>PERSONA CAROUSEL!
-				<div class="simple-slider">
-					<div class="slider-wrapper">
-						<div class="slider-slide" style="background-image: url('../../img/openjustice-carousel-1.jpg')"></div>
-						<div class="carousel-cell" style="background-image: url('../../img/openjustice-carousel-2.jpg'"></div>
-						<div class="carousel-cell" style="background-image: url('../../img/openjustice-carousel-3.jpg'"></div>
-					</div>
-				</div>
 			</p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="../../img/OJ_Persona_1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/OJ_Persona_2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/OJ_Persona_3.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
 			<h4>Strategy</h4>
 				<p>After gathering great insights from the users and the stakeholders, we began visualizing the best way to restructure the high and low level navigation on the site. The actual content on the site was excellent; we just needed to come up with a way to let specific users find the data sets (and their accompanying features) in an easy and efficient way. The following is a  before and after view of the breakdown of the site. The updated sitemap establishes.</p>
 				<div class="bullet-point">

@@ -42,9 +42,20 @@ body.main-body {
 
 .bullet-point {
 	list-style-type: disc;
+	font-size: 14px;
 	font-family: $Karla;
 	color: #4A4A4A;
 	margin-left: 25px;
+}
+
+@media screen and (min-width: 1064px) {
+	.bullet-point {
+		list-style-type: disc;
+		font-size: 16px;
+		font-family: $Karla;
+		color: #4A4A4A;
+		margin-left: 25px;
+	}
 }
 
 // Import your other Sass files here. Note that styles will overwrite/cascade
