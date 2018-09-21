@@ -45,9 +45,12 @@ body.main-body {
 	font-size: 14px;
 	font-family: $Karla;
 	color: #4A4A4A;
-	line-height: 30px;
+	line-height: 26px;
 	margin-left: 25px;
 	list-style-type: disc;
+	span {
+		font-weight: 700;
+	}
 }
 
 @media screen and (min-width: 1064px) {
@@ -56,8 +59,11 @@ body.main-body {
 		font-size: 16px;
 		font-family: $Karla;
 		color: #4A4A4A;
-		line-height: 30px;
+		line-height: 26px;
 		margin-left: 25px;
+		span {
+			font-weight: 700;
+		}
 	}
 }
 
