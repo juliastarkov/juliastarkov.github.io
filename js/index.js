@@ -37,11 +37,7 @@ if(document.querySelector('#main-header')) {
           // Get each content section's height for smooth scroll functionality
           mainHeaderHeight   = document.getElementById('main-header').offsetHeight,
           featuredWorkHeight = document.getElementById('work').offsetHeight;
-<<<<<<< HEAD
-          // contactHeight      = document.getElementById('contact').offsetHeight;
-=======
         //   contactHeight      = document.getElementById('contact').offsetHeight;
->>>>>>> 412fab56c46b4a0f89cf5220b61f691c01586e12
 
 	// Smooth Scrolling Nav Buttons
 	// https://gist.github.com/andjosh/6764939
