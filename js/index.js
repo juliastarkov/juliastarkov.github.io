@@ -28,7 +28,7 @@ window.onscroll = function() {
 if(document.querySelector('#main-header')) {
 	const mainHeaderText     = document.querySelector('#main-header .title'),
           headerArrow        = document.querySelector('#main-header svg'),
-          navBtns            = [...document.querySelectorAll('.nav-links a')],
+          navBtns            = [...document.querySelectorAll('#work-btn')],
           iconBG             = document.querySelector('.icon-bg'),
           iconBGHead         = document.querySelector('#main-header .icon-bg'),
           iconBGWork         = document.querySelector('#work .icon-bg'),
@@ -37,7 +37,7 @@ if(document.querySelector('#main-header')) {
           // Get each content section's height for smooth scroll functionality
           mainHeaderHeight   = document.getElementById('main-header').offsetHeight,
           featuredWorkHeight = document.getElementById('work').offsetHeight,
-        //   contactHeight      = document.getElementById('contact').offsetHeight;
+          contactHeight      = document.getElementById('contact').offsetHeight;
 
 	// Smooth Scrolling Nav Buttons
 	// https://gist.github.com/andjosh/6764939
