@@ -32,12 +32,12 @@ if(document.querySelector('#main-header')) {
           iconBG             = document.querySelector('.icon-bg'),
           iconBGHead         = document.querySelector('#main-header .icon-bg'),
           iconBGWork         = document.querySelector('#work .icon-bg'),
-          iconBGContact      = document.querySelector('#contact .icon-bg'),
+        //   iconBGContact      = document.querySelector('#contact .icon-bg'),
           starburst          = [...document.querySelectorAll('.starbust')],
           // Get each content section's height for smooth scroll functionality
           mainHeaderHeight   = document.getElementById('main-header').offsetHeight,
           featuredWorkHeight = document.getElementById('work').offsetHeight,
-          contactHeight      = document.getElementById('contact').offsetHeight;
+        //   contactHeight      = document.getElementById('contact').offsetHeight;
 
 	// Smooth Scrolling Nav Buttons
 	// https://gist.github.com/andjosh/6764939
@@ -105,7 +105,7 @@ if(document.querySelector('#main-header')) {
 	    // Offset scrolling of work bg icons
 	    iconBGWork.style.top = `${(window.pageYOffset + mainHeaderHeight) / 5}px`;
 	    // Offset scrolling of contact bg icons
-	    iconBGContact.style.top = `${(window.pageYOffset - 2000) / 5}px`;
+	    // iconBGContact.style.top = `${(window.pageYOffset - 2000) / 5}px`;
 
 	    // Rotates the Starbursts
     	starburst.forEach(star => {
