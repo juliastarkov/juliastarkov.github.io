@@ -8,7 +8,7 @@
 	padding: 40px 0;
 	margin-top: 75px;
 	border-radius: 5px;
-	background-color: $white;
+	background-color: #FFFFFF;
 	color: $bodyTextColor;
 	h6 {
 		font-family: $Playfair;
@@ -109,7 +109,7 @@
 		}
 	}
 	hr {
-			width: 70%;
+			width: 90%;
 			margin-bottom: 40px;
 			border-top: none;
 			border-bottom: 2px solid $grey;
@@ -118,7 +118,7 @@
 		width: 50%;
 		img {
 			float: left;
-			width: 40%;
+			width: 100%;
 			margin-right: 15px;
 			margin-bottom: 5px;
 			border-radius: 3px;
@@ -129,7 +129,8 @@
 			font-size: 18px;
 			line-height: 1.25em;
 			&:first-of-type {
-				margin-top: 115px;
+				margin: auto;
+				width: 90%;
 			}
 		}
 	}
@@ -176,14 +177,17 @@
 		}
 		hr {
 			margin-bottom: 60px;
+			width: 70%;
 		}
 		.content {
 			img {
 				display: none;
+				width: 100%;
 			}
 			p {
 				&:first-of-type {
-					margin-top: 0px;
+					margin: auto;
+					width: 90%;
 				}
 			}
 		}
