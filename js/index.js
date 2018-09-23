@@ -36,8 +36,8 @@ if(document.querySelector('#main-header')) {
           starburst          = [...document.querySelectorAll('.starbust')],
           // Get each content section's height for smooth scroll functionality
           mainHeaderHeight   = document.getElementById('main-header').offsetHeight,
-          featuredWorkHeight = document.getElementById('work').offsetHeight,
-          contactHeight      = document.getElementById('contact').offsetHeight;
+          featuredWorkHeight = document.getElementById('work').offsetHeight;
+          // contactHeight      = document.getElementById('contact').offsetHeight;
 
 	// Smooth Scrolling Nav Buttons
 	// https://gist.github.com/andjosh/6764939
