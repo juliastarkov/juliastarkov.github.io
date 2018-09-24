@@ -19,7 +19,7 @@
 		font-size: 24px;
 	}
 	.form {
-		width: 90%;
+		width: 85%;
 		margin-bottom: 30px;
 		h3 {
 			display: none;
@@ -39,17 +39,17 @@
 				padding: 10px 10px;
 				font-family: $Karla;
 				color: $bodyTextColor;
-				font-size: 18px;
+				font-size: 14px;
 				outline: none;
 				&::-webkit-input-placeholder {
 				  font-family: $Karla;
 				  color: $grey;
-				  font-size: 18px;
+				  font-size: 14px;
 				}
 				&::-moz-placeholder {
 			      font-family: $Karla;
 				  color: $grey;
-				  font-size: 18px;
+				  font-size: 16px;
 				}
 			}
 			input {
