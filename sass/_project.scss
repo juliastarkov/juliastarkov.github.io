@@ -2,7 +2,11 @@
 	header {
 		width: 100%;
 		height: auto;
-		background: rgb(229,255,243);
+		// background: rgb(229,255,243);
+		background: -moz-linear-gradient(top, rgba(229,255,243,1) 0%, rgba(246,242,254,1) 90%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(229,255,243,1) 0%,rgba(246,242,254,1) 90%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(229,255,243,1) 0%,rgba(246,242,254,1) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5fff3', endColorstr='#e5fff3',GradientType=0 ); /* IE6-9 */
 		.hamburger-inner {
 			background-color: #9B9B9B;
 			&::before,
