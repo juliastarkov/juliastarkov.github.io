@@ -105,6 +105,18 @@
 				color: $bodyTextColor;
 				margin-bottom: 15px;
 				line-height: 25px;
+				a:link {
+    				color: #83A494;
+    				text-decoration: underline;
+				}
+				a:visited {
+    				color: #9C90A0;
+    				text-decoration: underline;
+    			}
+    			a:hover {
+					 color: #4A4A4A;
+					 text-decoration: underline;
+				}
 			}
 
 
