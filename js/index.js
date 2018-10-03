@@ -126,7 +126,7 @@ if(document.querySelector('#main-header')) {
 }
 
 // Simple Slider Init
-var slider = new simpleSlider('.simple-slider');
+// var slider = new simpleSlider('.simple-slider');
 
 
 
