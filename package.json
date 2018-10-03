@@ -20,7 +20,7 @@
     "body-parser": "^1.18.3",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
-    "nodemailer": "^4.6.5",
+    "nodemailer": "^4.6.8",
     "nodemailer-mailgun-transport": "^1.4.0"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "babel-core": "^6.26.3",
     "babel-plugin-transform-remove-strict-mode": "0.0.2",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.24.6",
+    "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^3.10.0",
