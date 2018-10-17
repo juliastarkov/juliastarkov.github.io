@@ -134,6 +134,20 @@
 				margin-bottom: 20px;
 				border-radius: 3px;
 			}
+			.video-container {
+				position:relative;
+				padding-bottom:56.25%;
+				padding-top:30px;
+				height:0;
+				overflow:hidden;
+			}
+			.video-container iframe, .video-container object, .video-container embed {
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+			}
 			.lists {
 				width: 95%;
 				margin: 0 auto;
@@ -296,6 +310,8 @@
 					font-size: 16px;
 					color: $bodyTextColor;
 					font-style: italic;
+				}
+				.video-container {
 				}
 				.lists {
 					display: flex;

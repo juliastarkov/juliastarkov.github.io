@@ -20,7 +20,9 @@ header {
 		h2 {
 			font-family: $Karla;
 			color: $bodyTextColor;
-			font-size: 26px;
+			font-size: 16px;
+			text-align: center;
+			line-height: 30px;
 		}
 	}
 	svg {
@@ -93,7 +95,8 @@ header {
 				font-size: 64px;
 			}
 			h2 {
-				font-size: 36px;
+				font-size: 30px;
+				line-height: 42px;
 			}
 		}
 		svg {
