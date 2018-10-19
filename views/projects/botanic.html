@@ -124,6 +124,98 @@
 					(Currently, the wireframes are under NDA until official product launch)
 					</h5>
 				</p>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="../../img/AT1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT3.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT4.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT5.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT6.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT7.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT8.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT9.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="../../img/AT10.png" style="width:100%">
+  </div>
+  
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+
+
+
+
 			<h4>Ideation | Mockups</h4>
 				<p>Working on the wireframes was an incredibly iterative and collaborative process. Understanding technical limitations/capabilities as well as bot creation best practices and requirements was crucial to the success of the product development cycle and ultimate result. Visual design was used in the tool as a way to enhance the experience through:
 				<div class="bullet-point">
