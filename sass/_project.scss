@@ -127,7 +127,9 @@
 				font-style: italic;
 			}
 
-
+			span {
+			font-weight: 700;
+			}
 
 			img {
 				width: 100%;
@@ -195,7 +197,7 @@
   			font-size: 24px;
   			transition: 0.6s ease;
   			border-radius: 0 3px 3px 0;
-  			background-color: rgba(0,0,0,0.2);
+  			background-color: rgba(189,221,205,0.6);
 
 		}
 		.next {
@@ -203,7 +205,7 @@
   			border-radius: 3px 0 0 3px;
   		}
   		.prev:hover, .next:hover {
-  			background-color: rgba(0,0,0,0.9);
+  			background-color: rgba(189,221,205,1);
 		}
 		.dot {
   			cursor: pointer;
