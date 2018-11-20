@@ -63,7 +63,6 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				width: 100%;
 				button {
 					padding: 10px 50px;
 					height: 100%;
@@ -87,18 +86,12 @@
 				}
 				div {
 					display: flex;
-					justify-content: flex-end;
-					align-items: center;
-					width: 75px;
+					justify-content: right;
 					a {
 						display: flex;
-						justify-content: flex-end;
-					}
+						justify-content: left;					}
 					img {
-						width: 70%;
-						height: 100%;
-						margin-left: 15px;
-						border-radius: 50%;
+						width: 50%;
 						transition: all 0.4s ease-in-out;
 						&:hover {
 							background-color: $pink;
