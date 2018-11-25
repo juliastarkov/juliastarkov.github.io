@@ -184,34 +184,6 @@
 		  <span class="dot" onclick="currentSlide(3)"></span> 
 		</div>
 
-		<script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-		  if (n > slides.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		      dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += " active";
-		}
-		</script>
 			<p>Our redesign focused on the three primary sections of the site:</p>
 				<div class="bullet-point">
 					• <span>Home Page / Global Navigation</span>: The updated homepage features two main options for exploring the site's content. The global navigation is pared down to reflect the hierarchy of the site by incorporating nested contents.<br><br> 
