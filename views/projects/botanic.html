@@ -23,6 +23,7 @@
 	<title>Julia Starkov | UX Design</title>
 	<link rel="stylesheet" type="text/css" href="../../dist/build.min.css">
 </head>
+<body onload="smallSlides();modalSlides()">
 <body class="project botanic">
 	<header>
 		<nav>
@@ -126,101 +127,249 @@
 						<br><br>• <span>Functional hover states</span>: Another variation of nesting, many of the components in the tool have hover states that also expose the option to edit/delete. This is a learnable behavior that helps keep the workspace minimal, while also unlocking additional functionality just a click away.
 					</div><br>
 				</p>
-<!-- Slideshow container -->
+
 <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
   	<div class="numbertext">1 / 10</div>
-    <img src="../../img/AT1.png" style="width:100%">
+    <img src="../../img/BA1.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">2 / 10</div>
-    <img src="../../img/AT2.png" style="width:100%">
+    <img src="../../img/BA2.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">3 / 10</div>
-    <img src="../../img/AT3.png" style="width:100%">
+    <img src="../../img/BA3.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">4 / 10</div>
-    <img src="../../img/AT4.png" style="width:100%">
+    <img src="../../img/BA4.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">5 / 10</div>
-    <img src="../../img/AT5.png" style="width:100%">
+    <img src="../../img/BA5.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">6 / 10</div>
-    <img src="../../img/AT6.png" style="width:100%">
+    <img src="../../img/BA6.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">7 / 10</div>
-    <img src="../../img/AT7.png" style="width:100%">
+    <img src="../../img/BA7.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">8 / 10</div>
-    <img src="../../img/AT8.png" style="width:100%">
+    <img src="../../img/BA8.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">9 / 10</div>
-    <img src="../../img/AT9.png" style="width:100%">
+    <img src="../../img/BA9.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
   	<div class="numbertext">10 / 10</div>
-    <img src="../../img/AT10.png" style="width:100%">
+    <img src="../../img/BA10.png" style="width:100%">
   </div>
   
-  <!-- Next and previous buttons -->
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
+
+<!-- 		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div> -->
+
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="../../img/fullscreenbutton.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+<!--   <div class="column">
+    <img src="../../img/BA2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="../../img/BA3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="../../img/BA4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="../../img/BA5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="../../img/BA6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="../../img/BA7.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="../../img/BA8.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="../../img/BA9.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
+  </div>
+    <div class="column">
+    <img src="../../img/BA10.png" onclick="openModal();currentSlide(10)" class="hover-shadow">
+	</div> -->
 </div>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    <div class="mySlides2">
+      <div class="numbertext">1 / 10</div>
+      <img src="../../img/BA1.png" style="width:100%">
+    </div>
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    <div class="mySlides2">
+      <div class="numbertext">2 / 10</div>
+      <img src="../../img/BA2.png" style="width:100%">
+    </div>
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+    <div class="mySlides2">
+      <div class="numbertext">3 / 10</div>
+      <img src="../../img/BA3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">4 / 10</div>
+      <img src="../../img/BA4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">5 / 10</div>
+      <img src="../../img/BA5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">6 / 10</div>
+      <img src="../../img/BA6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">7 / 10</div>
+      <img src="../../img/BA7.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">8 / 10</div>
+      <img src="../../img/BA8.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">9 / 10</div>
+      <img src="../../img/BA9.png" style="width:100%">
+    </div>
+
+    <div class="mySlides2">
+      <div class="numbertext">10 / 10</div>
+      <img src="../../img/BA10.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+
+		<script>
+
+			// Open the Modal
+			function openModal() {
+			  document.getElementById('myModal').style.display = "block";
+			}
+
+			// Close the Modal
+			function closeModal() {
+			  document.getElementById('myModal').style.display = "none";
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides2");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+		</script>
+
+
+
+
 
 	<p>Working on the wireframes was an incredibly iterative and collaborative process. Understanding technical limitations/capabilities as well as bot creation best practices and requirements was crucial to the success of the product development cycle and ultimate result.</p>
 
