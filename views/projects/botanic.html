@@ -23,7 +23,6 @@
 	<title>Julia Starkov | UX Design</title>
 	<link rel="stylesheet" type="text/css" href="../../dist/build.min.css">
 </head>
-<body onload="smallSlides();modalSlides()">
 <body class="project botanic">
 	<header>
 		<nav>
@@ -193,8 +192,22 @@
 		</div> -->
 
 		<script>
+			// Open the Modal
+			function openModal() {
+				document.getElementById('myModal').style.display = "block";
+				slideTarget = "myModalSlides"
+			}
+
+			// Close the Modal
+			function closeModal() {
+				document.getElementById('myModal').style.display = "none";
+				slideTarget = "mySlides"
+			}
+
 			var slideIndex = 1;
+			var slideTarget = "mySlides";
 			showSlides(slideIndex);
+
 
 			function plusSlides(n) {
 			  showSlides(slideIndex += n);
@@ -206,18 +219,18 @@
 
 			function showSlides(n) {
 			  var i;
-			  var slides = document.getElementsByClassName("mySlides");
+			  var slides = document.getElementsByClassName(slideTarget);
 			  var dots = document.getElementsByClassName("dot");
-			  if (n > slides.length) {slideIndex = 1}    
-			  if (n < 1) {slideIndex = slides.length}
+			  if (n > slides.length) {slideIndex = 1};    
+			  if (n < 1) {slideIndex = slides.length};
 			  for (i = 0; i < slides.length; i++) {
 			      slides[i].style.display = "none";  
 			  }
-			  for (i = 0; i < dots.length; i++) {
-			      dots[i].className = dots[i].className.replace(" active", "");
-			  }
+			  // for (i = 0; i < dots.length; i++) {
+			  //     dots[i].className = dots[i].className.replace(" active", "");
+			  // }
 			  slides[slideIndex-1].style.display = "block";  
-			  dots[slideIndex-1].className += " active";
+			  // dots[slideIndex-1].className += " active";
 			}
 		</script>
 
@@ -225,7 +238,7 @@
 
 <div class="row">
   <div class="column">
-    <img src="../../img/fullscreenbutton.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img src="../../img/fullscreenbutton.png" onclick="openModal();currentSlide(1);" class="hover-shadow">
   </div>
 <!--   <div class="column">
     <img src="../../img/BA2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
@@ -258,55 +271,55 @@
 
 <!-- The Modal/Lightbox -->
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <span class="close cursor" onclick="closeModal();currentSlide(1);">&times;</span>
   <div class="modal-content">
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">1 / 10</div>
       <img src="../../img/BA1.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">2 / 10</div>
       <img src="../../img/BA2.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">3 / 10</div>
       <img src="../../img/BA3.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">4 / 10</div>
       <img src="../../img/BA4.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">5 / 10</div>
       <img src="../../img/BA5.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">6 / 10</div>
       <img src="../../img/BA6.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">7 / 10</div>
       <img src="../../img/BA7.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">8 / 10</div>
       <img src="../../img/BA8.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">9 / 10</div>
       <img src="../../img/BA9.png" style="width:100%">
     </div>
 
-    <div class="mySlides2">
+    <div class="myModalSlides fade">
       <div class="numbertext">10 / 10</div>
       <img src="../../img/BA10.png" style="width:100%">
     </div>
@@ -322,50 +335,6 @@
 
   </div>
 </div>
-
-		<script>
-
-			// Open the Modal
-			function openModal() {
-			  document.getElementById('myModal').style.display = "block";
-			}
-
-			// Close the Modal
-			function closeModal() {
-			  document.getElementById('myModal').style.display = "none";
-			}
-
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			// Next/previous controls
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
-
-			// Thumbnail image controls
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			  var i;
-			  var slides = document.getElementsByClassName("mySlides2");
-			  var dots = document.getElementsByClassName("demo");
-			  var captionText = document.getElementById("caption");
-			  if (n > slides.length) {slideIndex = 1}
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-			    slides[i].style.display = "none";
-			  }
-			  for (i = 0; i < dots.length; i++) {
-			    dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";
-			  dots[slideIndex-1].className += " active";
-			  captionText.innerHTML = dots[slideIndex-1].alt;
-			}
-		</script>
 
 
 
