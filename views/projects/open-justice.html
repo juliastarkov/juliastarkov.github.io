@@ -124,7 +124,7 @@
 				</div>
 				<br><br><br>
 
-	<h4>Ideation</h4>
+	<h4>Ideation  |  Wireframes</h4>
 	<p>We wanted the user interface to reflect our recommendations, so we kept the design modern, straightforward, and clean. We started by collaborating on paper sketches and then I moved on to wireframes.</p>
 
 		<!-- Slideshow container -->
@@ -184,21 +184,88 @@
 		  <span class="dot" onclick="currentSlide(3)"></span> 
 		</div>
 
-			<p>Our redesign focused on the three primary sections of the site:</p>
-				<div class="bullet-point">
-					• <span>Home Page / Global Navigation</span>: The updated homepage features two main options for exploring the site's content. The global navigation is pared down to reflect the hierarchy of the site by incorporating nested contents.<br><br> 
-					• <span>Data Stories</span>: Data Stories is where users can explore data visualizations alongside curated content to give the statistics contextual relevance. We restructured the layout of each page to immediately display all of the available sections (as opposed to having to scroll without an index). We also recommended that large chunks of copy be nested so as not overwhelm the user. <br><br>
-					• <span>Data Exploration</span>: Data Exploration is where power users can dig deep to find specific data points. We recommended that the filters be open and visible at all time. The site initially had dropdown menus for each filter option and no way to see what was filtered after the dropdown closed. We applied design best practices in order to recommend the most appropriate types of filters (sliders, checkboxes, dropdown menus) to make searching for specific data as intuitive and simple as possible.<br><br><br>
-				</div>
-		<p>We wrapped up the project by adding a visual design layer to highlight the new clean and approachable design. At the end of our two and a half week sprint we presented our findings and recommendations to the client and handed off the deliverables.</p>
+<div class="row">
+  <div class="column">
+    <img src="../../img/fullscreenbutton.png" onclick="openModal();currentSlide(1);" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal();currentSlide(1);">&times;</span>
+  <div class="modal-content">
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">1 / 10</div>
+      <img src="../../img/OJ_WF_1.png" style="width:100%">
+    </div>
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">2 / 10</div>
+      <img src="../../img/OJ_WF_2.png" style="width:100%">
+    </div>
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">3 / 10</div>
+      <img src="../../img/OJ_WF_3.png" style="width:100%">
+    </div>
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">4 / 10</div>
+      <img src="../../img/OJ_WF_4.png" style="width:100%">
+    </div>
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">5 / 10</div>
+      <img src="../../img/OJ_WF_5.png" style="width:100%">
+    </div>
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">6 / 10</div>
+      <img src="../../img/OJ_WF_6.png" style="width:100%">
+    </div>
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">7 / 10</div>
+      <img src="../../img/OJ_WF_7.png" style="width:100%">
+    </div>
+
+    <div class="myModalSlides fade">
+      <div class="numbertext">8 / 10</div>
+      <img src="../../img/OJ_WF_8.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+	<h4>Ideation  |  Mockups</h4>
+		<p>We wrapped up the project by adding a visual design layer to highlight the new clean and approachable design. Our redesign focused on the three primary sections of the site:<br><br>
+				<img src="../../img/OJ_1.jpg">
+					<span>Home Page / Global Navigation</span>: The updated homepage features two main options for exploring the site's content. The global navigation is pared down to reflect the hierarchy of the site by incorporating nested contents.<br><br><br><br>
+					<img src="../../img/OJ_2.jpg">
+					<span>Data Stories</span>: Data Stories is where users can explore data visualizations alongside curated content to give the statistics contextual relevance. We restructured the layout of each page to immediately display all of the available sections (as opposed to having to scroll without an index). We also recommended that large chunks of copy be nested so as not overwhelm the user. <br><br><br><br>
+					<img src="../../img/OJ_3.jpg">
+					<span>Data Exploration</span>: Data Exploration is where power users can dig deep to find specific data points. We recommended that the filters be open and visible at all time. The site initially had dropdown menus for each filter option and no way to see what was filtered after the dropdown closed. We applied design best practices in order to recommend the most appropriate types of filters (sliders, checkboxes, dropdown menus) to make searching for specific data as intuitive and simple as possible.</p>
 		</div>
 	</section>
 
-	<section class="section-2">
+<!-- 	<section class="section-2">
 		<div class="content-img">
 			<img src="../../img/OJ_Mockups_V2.png">
 		</div>
-	</section>
+	</section> -->
 
 
 
