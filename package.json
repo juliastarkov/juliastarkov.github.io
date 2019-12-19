@@ -20,6 +20,7 @@
     "body-parser": "^1.18.3",
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
+    "gulp-cli": "^2.2.0",
     "nodemailer": "^4.6.8",
     "nodemailer-mailgun-transport": "^1.4.0"
   },
