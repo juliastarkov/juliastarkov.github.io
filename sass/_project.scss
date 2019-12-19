@@ -255,10 +255,10 @@
 			font-family: $Karla;
 			font-size: 12px;
 			padding: 8px 12px;
-			position: absolute;
-			bottom: 5%;
-			}
-
+			position:absolute;
+    		bottom:0;
+    		right:0;
+    	}
 		.dot {
   			cursor: pointer;
   			height: 15px;
@@ -388,8 +388,9 @@
 	  font-size: 12px;
 	  font-family: $Karla;
 	  padding: 8px 12px;
-	  position: absolute;
-	  top: 0;
+	  position:absolute;
+    bottom:0;
+    right:0;
 	}
 
 	/* Caption text */
